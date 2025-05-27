@@ -26,7 +26,7 @@
             />
           </a>
           <a
-            href="https://linkedin.com/in/caleb-anthony/"
+            href="https://linkedin.com/in/calebanthony"
             target="_blank"
           >
             <UButton

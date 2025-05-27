@@ -1,7 +1,15 @@
+<script setup>
+useHead({
+  htmlAttrs: {
+    class: 'dark',
+  },
+})
+</script>
+
 <template>
   <UApp>
     <NuxtRouteAnnouncer />
-    <main class="flex flex-col min-h-screen container mx-auto">
+    <main class="flex flex-col min-h-screen container mx-auto p-2">
       <Nav />
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
