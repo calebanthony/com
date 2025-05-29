@@ -4829,7 +4829,7 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 const _sfc_main$5 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0;
   const _component_UButton = _sfc_main$a;
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full" }, _attrs))}><div class="container mx-auto"><div class="flex items-center py-4">`);
@@ -4857,7 +4857,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
     color: "primary",
     variant: "solid"
   }, null, _parent));
-  _push(`</a><a href="https://linkedin.com/in/caleb-anthony/" target="_blank">`);
+  _push(`</a><a href="https://linkedin.com/in/calebanthony" target="_blank">`);
   _push(ssrRenderComponent(_component_UButton, {
     icon: "mdi:linkedin",
     class: "cursor-pointer",
@@ -4881,7 +4881,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Nav.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$2]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$1]]);
 const _sfc_main$4 = {
   __name: "Project",
   __ssrInlineRender: true,
@@ -4914,7 +4914,7 @@ _sfc_main$4.setup = (props, ctx) => {
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
 const _sfc_main$3 = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __nuxt_component_0;
   _push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full pt-20 pb-8" }, _attrs))}><div class="container mx-auto"><div class="flex justify-between items-center"><div class="flex items-center">`);
   _push(ssrRenderComponent(_component_NuxtLink, { to: "/" }, {
@@ -4941,217 +4941,42 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Footer.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_5 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$1]]);
+const __nuxt_component_5 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender]]);
 const _imports_0 = publicAssetsURL("/headshot.png");
-const _sfc_main$2 = {};
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_UApp = _sfc_main$6;
-  const _component_NuxtRouteAnnouncer = __nuxt_component_1;
-  const _component_Nav = __nuxt_component_2;
-  const _component_Project = _sfc_main$4;
-  const _component_Icon = __nuxt_component_4;
-  const _component_Footer = __nuxt_component_5;
-  _push(ssrRenderComponent(_component_UApp, _attrs, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(ssrRenderComponent(_component_NuxtRouteAnnouncer, null, null, _parent2, _scopeId));
-        _push2(`<main class="flex flex-col min-h-screen container mx-auto"${_scopeId}>`);
-        _push2(ssrRenderComponent(_component_Nav, null, null, _parent2, _scopeId));
-        _push2(`<div class="grid grid-cols-1 md:grid-cols-2 gap-4"${_scopeId}><div class="flex items-center justify-center"${_scopeId}><img${ssrRenderAttr("src", _imports_0)} class="max-w-96 h-full object-cover"${_scopeId}></div><div class="flex flex-col justify-center"${_scopeId}><h1 class="text-4xl font-bold text-white"${_scopeId}> Caleb Anthony </h1><p class="text-lg"${_scopeId}> Senior Full-Stack Developer </p><p class="text-lg"${_scopeId}> Workflow Architect </p><p class="mt-2 text-neutral-300"${_scopeId}> My superpower is empowering people to do what people do best. </p><p class="mt-2 text-neutral-300"${_scopeId}> If your team is talking about hiring more people to handle the workload, you might not need more hands—you might need better systems. I turn manual chaos into automated clarity. </p></div></div><div class="grid gap-4 mt-12"${_scopeId}><h2 class="text-2xl font-bold"${_scopeId}> What I&#39;ve Done </h2><div class="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-8"${_scopeId}>`);
-        _push2(ssrRenderComponent(_component_Project, { image: "/datajoe-logo.png" }, {
-          title: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<a href="https://datajoe.com" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
-              _push3(ssrRenderComponent(_component_Icon, {
-                name: "mdi:open-in-new",
-                class: "text-neutral-400"
-              }, null, _parent3, _scopeId2));
-              _push3(` DataJoe </a><p class="text-sm text-neutral-400"${_scopeId2}> Internal survey &amp; data management to external microsite automation. </p>`);
-            } else {
-              return [
-                createVNode("a", {
-                  href: "https://datajoe.com",
-                  target: "_blank",
-                  class: "text-lg font-bold underline flex items-center gap-2"
-                }, [
-                  createVNode(_component_Icon, {
+const _sfc_main$2 = {
+  __name: "app",
+  __ssrInlineRender: true,
+  setup(__props) {
+    useHead({
+      htmlAttrs: {
+        class: "dark"
+      }
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_UApp = _sfc_main$6;
+      const _component_NuxtRouteAnnouncer = __nuxt_component_1;
+      const _component_Nav = __nuxt_component_2;
+      const _component_Project = _sfc_main$4;
+      const _component_Icon = __nuxt_component_4;
+      const _component_Footer = __nuxt_component_5;
+      _push(ssrRenderComponent(_component_UApp, _attrs, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(ssrRenderComponent(_component_NuxtRouteAnnouncer, null, null, _parent2, _scopeId));
+            _push2(`<main class="flex flex-col min-h-screen container mx-auto p-2"${_scopeId}>`);
+            _push2(ssrRenderComponent(_component_Nav, null, null, _parent2, _scopeId));
+            _push2(`<div class="grid grid-cols-1 md:grid-cols-2 gap-4"${_scopeId}><div class="flex items-center justify-center"${_scopeId}><img${ssrRenderAttr("src", _imports_0)} class="max-w-96 h-full object-cover"${_scopeId}></div><div class="flex flex-col justify-center"${_scopeId}><h1 class="text-4xl font-bold text-white"${_scopeId}> Caleb Anthony </h1><p class="text-lg"${_scopeId}> Senior Full-Stack Developer </p><p class="text-lg"${_scopeId}> Workflow Architect </p><p class="mt-2 text-neutral-300"${_scopeId}> My superpower is empowering people to do what people do best. </p><p class="mt-2 text-neutral-300"${_scopeId}> If your team is talking about hiring more people to handle the workload, you might not need more hands—you might need better systems. I turn manual chaos into automated clarity. </p></div></div><div class="grid gap-4 mt-12"${_scopeId}><h2 class="text-2xl font-bold"${_scopeId}> What I&#39;ve Done </h2><div class="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-8"${_scopeId}>`);
+            _push2(ssrRenderComponent(_component_Project, { image: "/datajoe-logo.png" }, {
+              title: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<a href="https://datajoe.com" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
+                  _push3(ssrRenderComponent(_component_Icon, {
                     name: "mdi:open-in-new",
                     class: "text-neutral-400"
-                  }),
-                  createTextVNode(" DataJoe ")
-                ]),
-                createVNode("p", { class: "text-sm text-neutral-400" }, " Internal survey & data management to external microsite automation. ")
-              ];
-            }
-          }),
-          description: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> Built the entire internal app and client-facing tech that the business is built on. Built with a Laravel (PHP) API, a VueJS frontend, a Postgres database, distributed microsites, and several complimentary tools, such as survey forms, directories, and other client-facing tools. </p><p${_scopeId2}> I maintain and support the application, including security updates, framework updates, package and dependency management, and server management. </p><p${_scopeId2}> Implemented the server infrastructure on AWS for a high-volume distributed API that has handled millions of survey submissions. </p><p${_scopeId2}> Regularly create automations and tools to empower the human team and eliminate unnecessary manual work. </p></div>`);
-            } else {
-              return [
-                createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
-                  createVNode("p", null, " Built the entire internal app and client-facing tech that the business is built on. Built with a Laravel (PHP) API, a VueJS frontend, a Postgres database, distributed microsites, and several complimentary tools, such as survey forms, directories, and other client-facing tools. "),
-                  createVNode("p", null, " I maintain and support the application, including security updates, framework updates, package and dependency management, and server management. "),
-                  createVNode("p", null, " Implemented the server infrastructure on AWS for a high-volume distributed API that has handled millions of survey submissions. "),
-                  createVNode("p", null, " Regularly create automations and tools to empower the human team and eliminate unnecessary manual work. ")
-                ])
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_Project, { image: "/elethor-logo.png" }, {
-          title: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<a href="https://elethor.com" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
-              _push3(ssrRenderComponent(_component_Icon, {
-                name: "mdi:open-in-new",
-                class: "text-neutral-400"
-              }, null, _parent3, _scopeId2));
-              _push3(` Elethor </a><p class="text-sm text-neutral-400"${_scopeId2}> A text-based browser MMO. </p>`);
-            } else {
-              return [
-                createVNode("a", {
-                  href: "https://elethor.com",
-                  target: "_blank",
-                  class: "text-lg font-bold underline flex items-center gap-2"
-                }, [
-                  createVNode(_component_Icon, {
-                    name: "mdi:open-in-new",
-                    class: "text-neutral-400"
-                  }),
-                  createTextVNode(" Elethor ")
-                ]),
-                createVNode("p", { class: "text-sm text-neutral-400" }, " A text-based browser MMO. ")
-              ];
-            }
-          }),
-          description: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> I went completely from idea to full delivery and continued development on a huge game project. </p><p${_scopeId2}> This project has truly stretched my skills. I&#39;ve grown as a developer, from sysadmin and server management to front-end UX and design. </p><p${_scopeId2}> I&#39;ve managed the game community of 700+ active players for years, handling issues and support, moderation, community events, and much more. </p></div>`);
-            } else {
-              return [
-                createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
-                  createVNode("p", null, " I went completely from idea to full delivery and continued development on a huge game project. "),
-                  createVNode("p", null, " This project has truly stretched my skills. I've grown as a developer, from sysadmin and server management to front-end UX and design. "),
-                  createVNode("p", null, " I've managed the game community of 700+ active players for years, handling issues and support, moderation, community events, and much more. ")
-                ])
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_Project, { image: "/smeltery-logo.svg" }, {
-          title: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<a href="https://smeltery.gg" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
-              _push3(ssrRenderComponent(_component_Icon, {
-                name: "mdi:open-in-new",
-                class: "text-neutral-400"
-              }, null, _parent3, _scopeId2));
-              _push3(` smeltery.gg </a><p class="text-sm text-neutral-400"${_scopeId2}> A community directory for the PBBG game genre. </p>`);
-            } else {
-              return [
-                createVNode("a", {
-                  href: "https://smeltery.gg",
-                  target: "_blank",
-                  class: "text-lg font-bold underline flex items-center gap-2"
-                }, [
-                  createVNode(_component_Icon, {
-                    name: "mdi:open-in-new",
-                    class: "text-neutral-400"
-                  }),
-                  createTextVNode(" smeltery.gg ")
-                ]),
-                createVNode("p", { class: "text-sm text-neutral-400" }, " A community directory for the PBBG game genre. ")
-              ];
-            }
-          }),
-          description: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> I had the MVP built and hosted in a couple of weekends (thanks Laravel + Vapor). </p><p${_scopeId2}> The back-end is built with Filament with some super easy data management tools. The idea is anyone could go in and manage the entire site from the dashboard. </p><p${_scopeId2}> I pulled in several 3rd-party APIs to get this all to work. Things like Discord for notifications, a tool built by another developer to support showing player count, a tool to automatically grab images and data from websites for new listings, and even some LLM stuff for writing game descriptions. </p><p${_scopeId2}> I was able to go from idea all the way to the community actually submitting games and talking about the site. This wasn&#39;t just a pet project, this met a real need and people actually use it on a regular basis to find new games. </p></div>`);
-            } else {
-              return [
-                createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
-                  createVNode("p", null, " I had the MVP built and hosted in a couple of weekends (thanks Laravel + Vapor). "),
-                  createVNode("p", null, " The back-end is built with Filament with some super easy data management tools. The idea is anyone could go in and manage the entire site from the dashboard. "),
-                  createVNode("p", null, " I pulled in several 3rd-party APIs to get this all to work. Things like Discord for notifications, a tool built by another developer to support showing player count, a tool to automatically grab images and data from websites for new listings, and even some LLM stuff for writing game descriptions. "),
-                  createVNode("p", null, " I was able to go from idea all the way to the community actually submitting games and talking about the site. This wasn't just a pet project, this met a real need and people actually use it on a regular basis to find new games. ")
-                ])
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-        _push2(ssrRenderComponent(_component_Project, { image: "/whaleshark-logo.png" }, {
-          title: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<a href="https://whaleshark.gg" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
-              _push3(ssrRenderComponent(_component_Icon, {
-                name: "mdi:open-in-new",
-                class: "text-neutral-400"
-              }, null, _parent3, _scopeId2));
-              _push3(` Whaleshark </a><p class="text-sm text-neutral-400"${_scopeId2}> A directory of F2P game monetization methods. </p>`);
-            } else {
-              return [
-                createVNode("a", {
-                  href: "https://whaleshark.gg",
-                  target: "_blank",
-                  class: "text-lg font-bold underline flex items-center gap-2"
-                }, [
-                  createVNode(_component_Icon, {
-                    name: "mdi:open-in-new",
-                    class: "text-neutral-400"
-                  }),
-                  createTextVNode(" Whaleshark ")
-                ]),
-                createVNode("p", { class: "text-sm text-neutral-400" }, " A directory of F2P game monetization methods. ")
-              ];
-            }
-          }),
-          description: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> A platform that showcases how a variety of F2P games monetize, so that indie developers and other small studios can easily see best monetization practices across genres and monetization methods. </p><p${_scopeId2}> The stack includes Laravel, InertiaJS with Vue, deployed on AWS with Laravel Vapor, and managed with a Filament dashboard. </p><p${_scopeId2}> The process for researching and documenting for each method is created and facilitated by me, using AI to help do deep research into specifics. </p></div>`);
-            } else {
-              return [
-                createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
-                  createVNode("p", null, " A platform that showcases how a variety of F2P games monetize, so that indie developers and other small studios can easily see best monetization practices across genres and monetization methods. "),
-                  createVNode("p", null, " The stack includes Laravel, InertiaJS with Vue, deployed on AWS with Laravel Vapor, and managed with a Filament dashboard. "),
-                  createVNode("p", null, " The process for researching and documenting for each method is created and facilitated by me, using AI to help do deep research into specifics. ")
-                ])
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-        _push2(`</div></div>`);
-        _push2(ssrRenderComponent(_component_Footer, { class: "mt-auto" }, null, _parent2, _scopeId));
-        _push2(`</main>`);
-      } else {
-        return [
-          createVNode(_component_NuxtRouteAnnouncer),
-          createVNode("main", { class: "flex flex-col min-h-screen container mx-auto" }, [
-            createVNode(_component_Nav),
-            createVNode("div", { class: "grid grid-cols-1 md:grid-cols-2 gap-4" }, [
-              createVNode("div", { class: "flex items-center justify-center" }, [
-                createVNode("img", {
-                  src: _imports_0,
-                  class: "max-w-96 h-full object-cover"
-                })
-              ]),
-              createVNode("div", { class: "flex flex-col justify-center" }, [
-                createVNode("h1", { class: "text-4xl font-bold text-white" }, " Caleb Anthony "),
-                createVNode("p", { class: "text-lg" }, " Senior Full-Stack Developer "),
-                createVNode("p", { class: "text-lg" }, " Workflow Architect "),
-                createVNode("p", { class: "mt-2 text-neutral-300" }, " My superpower is empowering people to do what people do best. "),
-                createVNode("p", { class: "mt-2 text-neutral-300" }, " If your team is talking about hiring more people to handle the workload, you might not need more hands—you might need better systems. I turn manual chaos into automated clarity. ")
-              ])
-            ]),
-            createVNode("div", { class: "grid gap-4 mt-12" }, [
-              createVNode("h2", { class: "text-2xl font-bold" }, " What I've Done "),
-              createVNode("div", { class: "grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-8" }, [
-                createVNode(_component_Project, { image: "/datajoe-logo.png" }, {
-                  title: withCtx(() => [
+                  }, null, _parent3, _scopeId2));
+                  _push3(` DataJoe </a><p class="text-sm text-neutral-400"${_scopeId2}> Internal survey &amp; data management to external microsite automation. </p>`);
+                } else {
+                  return [
                     createVNode("a", {
                       href: "https://datajoe.com",
                       target: "_blank",
@@ -5164,19 +4989,36 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
                       createTextVNode(" DataJoe ")
                     ]),
                     createVNode("p", { class: "text-sm text-neutral-400" }, " Internal survey & data management to external microsite automation. ")
-                  ]),
-                  description: withCtx(() => [
+                  ];
+                }
+              }),
+              description: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> Built the entire internal app and client-facing tech that the business is built on. Built with a Laravel (PHP) API, a VueJS frontend, a Postgres database, distributed microsites, and several complimentary tools, such as survey forms, directories, and other client-facing tools. </p><p${_scopeId2}> I maintain and support the application, including security updates, framework updates, package and dependency management, and server management. </p><p${_scopeId2}> Implemented the server infrastructure on AWS for a high-volume distributed API that has handled millions of survey submissions. </p><p${_scopeId2}> Regularly create automations and tools to empower the human team and eliminate unnecessary manual work. </p></div>`);
+                } else {
+                  return [
                     createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
                       createVNode("p", null, " Built the entire internal app and client-facing tech that the business is built on. Built with a Laravel (PHP) API, a VueJS frontend, a Postgres database, distributed microsites, and several complimentary tools, such as survey forms, directories, and other client-facing tools. "),
                       createVNode("p", null, " I maintain and support the application, including security updates, framework updates, package and dependency management, and server management. "),
                       createVNode("p", null, " Implemented the server infrastructure on AWS for a high-volume distributed API that has handled millions of survey submissions. "),
                       createVNode("p", null, " Regularly create automations and tools to empower the human team and eliminate unnecessary manual work. ")
                     ])
-                  ]),
-                  _: 1
-                }),
-                createVNode(_component_Project, { image: "/elethor-logo.png" }, {
-                  title: withCtx(() => [
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_component_Project, { image: "/elethor-logo.png" }, {
+              title: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<a href="https://elethor.com" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
+                  _push3(ssrRenderComponent(_component_Icon, {
+                    name: "mdi:open-in-new",
+                    class: "text-neutral-400"
+                  }, null, _parent3, _scopeId2));
+                  _push3(` Elethor </a><p class="text-sm text-neutral-400"${_scopeId2}> A text-based browser MMO. </p>`);
+                } else {
+                  return [
                     createVNode("a", {
                       href: "https://elethor.com",
                       target: "_blank",
@@ -5189,18 +5031,35 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
                       createTextVNode(" Elethor ")
                     ]),
                     createVNode("p", { class: "text-sm text-neutral-400" }, " A text-based browser MMO. ")
-                  ]),
-                  description: withCtx(() => [
+                  ];
+                }
+              }),
+              description: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> I went completely from idea to full delivery and continued development on a huge game project. </p><p${_scopeId2}> This project has truly stretched my skills. I&#39;ve grown as a developer, from sysadmin and server management to front-end UX and design. </p><p${_scopeId2}> I&#39;ve managed the game community of 700+ active players for years, handling issues and support, moderation, community events, and much more. </p></div>`);
+                } else {
+                  return [
                     createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
                       createVNode("p", null, " I went completely from idea to full delivery and continued development on a huge game project. "),
                       createVNode("p", null, " This project has truly stretched my skills. I've grown as a developer, from sysadmin and server management to front-end UX and design. "),
                       createVNode("p", null, " I've managed the game community of 700+ active players for years, handling issues and support, moderation, community events, and much more. ")
                     ])
-                  ]),
-                  _: 1
-                }),
-                createVNode(_component_Project, { image: "/smeltery-logo.svg" }, {
-                  title: withCtx(() => [
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_component_Project, { image: "/smeltery-logo.svg" }, {
+              title: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<a href="https://smeltery.gg" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
+                  _push3(ssrRenderComponent(_component_Icon, {
+                    name: "mdi:open-in-new",
+                    class: "text-neutral-400"
+                  }, null, _parent3, _scopeId2));
+                  _push3(` smeltery.gg </a><p class="text-sm text-neutral-400"${_scopeId2}> A community directory for the PBBG game genre. </p>`);
+                } else {
+                  return [
                     createVNode("a", {
                       href: "https://smeltery.gg",
                       target: "_blank",
@@ -5213,19 +5072,36 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
                       createTextVNode(" smeltery.gg ")
                     ]),
                     createVNode("p", { class: "text-sm text-neutral-400" }, " A community directory for the PBBG game genre. ")
-                  ]),
-                  description: withCtx(() => [
+                  ];
+                }
+              }),
+              description: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> I had the MVP built and hosted in a couple of weekends (thanks Laravel + Vapor). </p><p${_scopeId2}> The back-end is built with Filament with some super easy data management tools. The idea is anyone could go in and manage the entire site from the dashboard. </p><p${_scopeId2}> I pulled in several 3rd-party APIs to get this all to work. Things like Discord for notifications, a tool built by another developer to support showing player count, a tool to automatically grab images and data from websites for new listings, and even some LLM stuff for writing game descriptions. </p><p${_scopeId2}> I was able to go from idea all the way to the community actually submitting games and talking about the site. This wasn&#39;t just a pet project, this met a real need and people actually use it on a regular basis to find new games. </p></div>`);
+                } else {
+                  return [
                     createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
                       createVNode("p", null, " I had the MVP built and hosted in a couple of weekends (thanks Laravel + Vapor). "),
                       createVNode("p", null, " The back-end is built with Filament with some super easy data management tools. The idea is anyone could go in and manage the entire site from the dashboard. "),
                       createVNode("p", null, " I pulled in several 3rd-party APIs to get this all to work. Things like Discord for notifications, a tool built by another developer to support showing player count, a tool to automatically grab images and data from websites for new listings, and even some LLM stuff for writing game descriptions. "),
                       createVNode("p", null, " I was able to go from idea all the way to the community actually submitting games and talking about the site. This wasn't just a pet project, this met a real need and people actually use it on a regular basis to find new games. ")
                     ])
-                  ]),
-                  _: 1
-                }),
-                createVNode(_component_Project, { image: "/whaleshark-logo.png" }, {
-                  title: withCtx(() => [
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(ssrRenderComponent(_component_Project, { image: "/whaleshark-logo.png" }, {
+              title: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<a href="https://whaleshark.gg" target="_blank" class="text-lg font-bold underline flex items-center gap-2"${_scopeId2}>`);
+                  _push3(ssrRenderComponent(_component_Icon, {
+                    name: "mdi:open-in-new",
+                    class: "text-neutral-400"
+                  }, null, _parent3, _scopeId2));
+                  _push3(` Whaleshark </a><p class="text-sm text-neutral-400"${_scopeId2}> A directory of F2P game monetization methods. </p>`);
+                } else {
+                  return [
                     createVNode("a", {
                       href: "https://whaleshark.gg",
                       target: "_blank",
@@ -5238,33 +5114,166 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
                       createTextVNode(" Whaleshark ")
                     ]),
                     createVNode("p", { class: "text-sm text-neutral-400" }, " A directory of F2P game monetization methods. ")
-                  ]),
-                  description: withCtx(() => [
+                  ];
+                }
+              }),
+              description: withCtx((_2, _push3, _parent3, _scopeId2) => {
+                if (_push3) {
+                  _push3(`<div class="flex flex-col gap-2 text-neutral-300 text-sm"${_scopeId2}><p${_scopeId2}> A platform that showcases how a variety of F2P games monetize, so that indie developers and other small studios can easily see best monetization practices across genres and monetization methods. </p><p${_scopeId2}> The stack includes Laravel, InertiaJS with Vue, deployed on AWS with Laravel Vapor, and managed with a Filament dashboard. </p><p${_scopeId2}> The process for researching and documenting for each method is created and facilitated by me, using AI to help do deep research into specifics. </p></div>`);
+                } else {
+                  return [
                     createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
                       createVNode("p", null, " A platform that showcases how a variety of F2P games monetize, so that indie developers and other small studios can easily see best monetization practices across genres and monetization methods. "),
                       createVNode("p", null, " The stack includes Laravel, InertiaJS with Vue, deployed on AWS with Laravel Vapor, and managed with a Filament dashboard. "),
                       createVNode("p", null, " The process for researching and documenting for each method is created and facilitated by me, using AI to help do deep research into specifics. ")
                     ])
+                  ];
+                }
+              }),
+              _: 1
+            }, _parent2, _scopeId));
+            _push2(`</div></div>`);
+            _push2(ssrRenderComponent(_component_Footer, { class: "mt-auto" }, null, _parent2, _scopeId));
+            _push2(`</main>`);
+          } else {
+            return [
+              createVNode(_component_NuxtRouteAnnouncer),
+              createVNode("main", { class: "flex flex-col min-h-screen container mx-auto p-2" }, [
+                createVNode(_component_Nav),
+                createVNode("div", { class: "grid grid-cols-1 md:grid-cols-2 gap-4" }, [
+                  createVNode("div", { class: "flex items-center justify-center" }, [
+                    createVNode("img", {
+                      src: _imports_0,
+                      class: "max-w-96 h-full object-cover"
+                    })
                   ]),
-                  _: 1
-                })
+                  createVNode("div", { class: "flex flex-col justify-center" }, [
+                    createVNode("h1", { class: "text-4xl font-bold text-white" }, " Caleb Anthony "),
+                    createVNode("p", { class: "text-lg" }, " Senior Full-Stack Developer "),
+                    createVNode("p", { class: "text-lg" }, " Workflow Architect "),
+                    createVNode("p", { class: "mt-2 text-neutral-300" }, " My superpower is empowering people to do what people do best. "),
+                    createVNode("p", { class: "mt-2 text-neutral-300" }, " If your team is talking about hiring more people to handle the workload, you might not need more hands—you might need better systems. I turn manual chaos into automated clarity. ")
+                  ])
+                ]),
+                createVNode("div", { class: "grid gap-4 mt-12" }, [
+                  createVNode("h2", { class: "text-2xl font-bold" }, " What I've Done "),
+                  createVNode("div", { class: "grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-8" }, [
+                    createVNode(_component_Project, { image: "/datajoe-logo.png" }, {
+                      title: withCtx(() => [
+                        createVNode("a", {
+                          href: "https://datajoe.com",
+                          target: "_blank",
+                          class: "text-lg font-bold underline flex items-center gap-2"
+                        }, [
+                          createVNode(_component_Icon, {
+                            name: "mdi:open-in-new",
+                            class: "text-neutral-400"
+                          }),
+                          createTextVNode(" DataJoe ")
+                        ]),
+                        createVNode("p", { class: "text-sm text-neutral-400" }, " Internal survey & data management to external microsite automation. ")
+                      ]),
+                      description: withCtx(() => [
+                        createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
+                          createVNode("p", null, " Built the entire internal app and client-facing tech that the business is built on. Built with a Laravel (PHP) API, a VueJS frontend, a Postgres database, distributed microsites, and several complimentary tools, such as survey forms, directories, and other client-facing tools. "),
+                          createVNode("p", null, " I maintain and support the application, including security updates, framework updates, package and dependency management, and server management. "),
+                          createVNode("p", null, " Implemented the server infrastructure on AWS for a high-volume distributed API that has handled millions of survey submissions. "),
+                          createVNode("p", null, " Regularly create automations and tools to empower the human team and eliminate unnecessary manual work. ")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    createVNode(_component_Project, { image: "/elethor-logo.png" }, {
+                      title: withCtx(() => [
+                        createVNode("a", {
+                          href: "https://elethor.com",
+                          target: "_blank",
+                          class: "text-lg font-bold underline flex items-center gap-2"
+                        }, [
+                          createVNode(_component_Icon, {
+                            name: "mdi:open-in-new",
+                            class: "text-neutral-400"
+                          }),
+                          createTextVNode(" Elethor ")
+                        ]),
+                        createVNode("p", { class: "text-sm text-neutral-400" }, " A text-based browser MMO. ")
+                      ]),
+                      description: withCtx(() => [
+                        createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
+                          createVNode("p", null, " I went completely from idea to full delivery and continued development on a huge game project. "),
+                          createVNode("p", null, " This project has truly stretched my skills. I've grown as a developer, from sysadmin and server management to front-end UX and design. "),
+                          createVNode("p", null, " I've managed the game community of 700+ active players for years, handling issues and support, moderation, community events, and much more. ")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    createVNode(_component_Project, { image: "/smeltery-logo.svg" }, {
+                      title: withCtx(() => [
+                        createVNode("a", {
+                          href: "https://smeltery.gg",
+                          target: "_blank",
+                          class: "text-lg font-bold underline flex items-center gap-2"
+                        }, [
+                          createVNode(_component_Icon, {
+                            name: "mdi:open-in-new",
+                            class: "text-neutral-400"
+                          }),
+                          createTextVNode(" smeltery.gg ")
+                        ]),
+                        createVNode("p", { class: "text-sm text-neutral-400" }, " A community directory for the PBBG game genre. ")
+                      ]),
+                      description: withCtx(() => [
+                        createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
+                          createVNode("p", null, " I had the MVP built and hosted in a couple of weekends (thanks Laravel + Vapor). "),
+                          createVNode("p", null, " The back-end is built with Filament with some super easy data management tools. The idea is anyone could go in and manage the entire site from the dashboard. "),
+                          createVNode("p", null, " I pulled in several 3rd-party APIs to get this all to work. Things like Discord for notifications, a tool built by another developer to support showing player count, a tool to automatically grab images and data from websites for new listings, and even some LLM stuff for writing game descriptions. "),
+                          createVNode("p", null, " I was able to go from idea all the way to the community actually submitting games and talking about the site. This wasn't just a pet project, this met a real need and people actually use it on a regular basis to find new games. ")
+                        ])
+                      ]),
+                      _: 1
+                    }),
+                    createVNode(_component_Project, { image: "/whaleshark-logo.png" }, {
+                      title: withCtx(() => [
+                        createVNode("a", {
+                          href: "https://whaleshark.gg",
+                          target: "_blank",
+                          class: "text-lg font-bold underline flex items-center gap-2"
+                        }, [
+                          createVNode(_component_Icon, {
+                            name: "mdi:open-in-new",
+                            class: "text-neutral-400"
+                          }),
+                          createTextVNode(" Whaleshark ")
+                        ]),
+                        createVNode("p", { class: "text-sm text-neutral-400" }, " A directory of F2P game monetization methods. ")
+                      ]),
+                      description: withCtx(() => [
+                        createVNode("div", { class: "flex flex-col gap-2 text-neutral-300 text-sm" }, [
+                          createVNode("p", null, " A platform that showcases how a variety of F2P games monetize, so that indie developers and other small studios can easily see best monetization practices across genres and monetization methods. "),
+                          createVNode("p", null, " The stack includes Laravel, InertiaJS with Vue, deployed on AWS with Laravel Vapor, and managed with a Filament dashboard. "),
+                          createVNode("p", null, " The process for researching and documenting for each method is created and facilitated by me, using AI to help do deep research into specifics. ")
+                        ])
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ]),
+                createVNode(_component_Footer, { class: "mt-auto" })
               ])
-            ]),
-            createVNode(_component_Footer, { class: "mt-auto" })
-          ])
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+    };
+  }
+};
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender]]);
 const _sfc_main$1 = {
   __name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -5334,7 +5343,7 @@ const _sfc_main = {
           } else if (unref(SingleRenderer)) {
             ssrRenderVNode(_push, createVNode(resolveDynamicComponent(unref(SingleRenderer)), null, null), _parent);
           } else {
-            _push(ssrRenderComponent(unref(AppComponent), null, null, _parent));
+            _push(ssrRenderComponent(unref(_sfc_main$2), null, null, _parent));
           }
         },
         _: 1
